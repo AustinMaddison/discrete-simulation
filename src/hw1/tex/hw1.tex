@@ -1,0 +1,155 @@
+\documentclass[twocolumn]{article}
+
+
+\newcommand{\authorname}{Austin J. Maddison}
+\newcommand{\titletext}{Discrete Simulation Homework 1}
+
+% Font: Arev
+%\usepackage[T1]{fontenc}
+%\usepackage{arev} % Load Arev font without scaling
+%\usepackage{inconsolata}
+
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault,scaled=.85]{FiraSans}
+\usepackage{newtxsf}
+\usepackage{float}
+
+% Packages for better typography and document layout
+\usepackage{microtype}   % Improves text appearance with microtypography
+\usepackage{amsmath}     % For better math support
+\usepackage{graphicx}    % For including graphics
+\usepackage{lipsum}      % For placeholder text
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{svg}
+\usepackage{svg-extract}
+
+% Page geometry
+\usepackage[a4paper, margin=0.8in, columnsep=20pt]{geometry}
+
+\usepackage{listings}
+\lstset{
+  language=Python,                     % Use Python language syntax
+  basicstyle=\ttfamily\small,           % Use modern monospace font for code
+  keywordstyle=\bfseries\color{black},   % Bold and blue keywords
+  stringstyle=\color{black},              % Strings in red
+  commentstyle=\color{black},            % Comments in gray
+  showstringspaces=false,               % Don't show spaces in strings
+  breaklines=true,                      % Break long lines
+  tabsize=4,                            % Set tab size to 4 spaces
+}
+
+% Two-column layout
+\setlength{\columnsep}{20pt}  % Space between columns
+
+% Headers and Footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+% Custom header
+\fancyhead[L]{\small Discrete Simulation: \slshape Homework 1}
+\fancyhead[R]{\small \authorname}
+\renewcommand{\headrulewidth}{0pt}
+
+% Custom footer
+%\fancyfoot[L]{\small Title, Date}
+\fancyfoot[R]{\thepage}
+
+% Line spacing
+\usepackage{setspace}
+\setstretch{1.15}  % Slightly more space between lines
+
+%\setlength{\mathindent}{0pt} % This removes the indentation for equations
+
+
+% Section formatting
+\usepackage{titlesec}
+\titleformat{\section}[block]{\large\bfseries}{\thesection.}{1em}{}
+\titleformat{\subsection}[block]{\normalsize\bfseries}{\thesubsection.}{1em}{}
+
+% Bibliography style
+\usepackage[numbers,sort&compress]{natbib} % For numbered citations
+
+% Hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    pdftitle={Research Paper Title},
+    pdfauthor={Author's Name},
+}
+
+\begin{document}
+
+% Title 
+\title{Discrete Simulation: Homework 1}
+\author{\authorname \\ \small Mahidol University International College}
+\date{\small \today}
+
+
+%
+\twocolumn[{
+  \maketitle
+%  \begin{abstract}
+%    \noindent Your abstract goes here. This is a brief summary of your paper.
+%  \end{abstract}
+%  \vspace{1cm}
+}]
+
+\section{Birthday Problem}
+
+\begin{enumerate}[label=\alph*)]
+    
+\item \begin{align*}
+p_{10} &= 0.1169 \\
+CI &= [(0.1169, 0.1189]
+\end{align*}
+    
+\item \begin{align*}
+p_{20} &=  0.4113 \\
+CI &= [0.4113, 0.4143]
+\end{align*}
+
+\item \begin{align*}
+p_{30} &= 0.7059 \\
+CI &= [0.7059, 0.7088]
+\end{align*}
+
+
+\item \begin{align*}
+p_{40} &= 100 \\
+CI &= [100, 100]
+\end{align*}
+	
+Found n from extracting the smallest difference from a function of varying n's and a function of p = 0.5.
+\vspace{-5pt}
+\begin{lstlisting}
+n = np.argmin(np.abs((np.ones((51, 1)) * 0.5) - ps)) + 1
+intersection  = (n, ps[n].item())
+\end{lstlisting}	
+\vspace{-10pt}
+	
+\begin{figure}[H]
+    \centering
+    \includesvg[width=0.5\textwidth]{p1_d.svg} % Adjust the width as needed
+    \caption{This is a caption for the SVG figure.}
+    \label{fig:my_svg}
+\end{figure}
+
+\end{enumerate}
+
+\section{Alice and Bob Play a Game}
+\lipsum[3-4] % Placeholder text
+
+\section{Practice with Uniform and Geometric Distributions}
+\lipsum[5-6] % Placeholder text
+
+
+% References
+%\bibliographystyle{unsrt}
+%\bibliography{references}
+
+\end{document}

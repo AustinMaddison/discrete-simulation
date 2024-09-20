@@ -1,0 +1,10 @@
+﻿pythonProject/.idea
+pythonProject/hw1.aux
+pythonProject/hw1.log
+pythonProject/hw1.out
+pythonProject/hw1.synctex.gz
+*.aux
+*.log
+*.out
+*.gz
+*.pdf_tex
