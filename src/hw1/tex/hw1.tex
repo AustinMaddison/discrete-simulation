@@ -5,13 +5,13 @@
 \newcommand{\titletext}{Discrete Simulation Homework 1}
 
 % Font: Arev
-%\usepackage[T1]{fontenc}
-%\usepackage{arev} % Load Arev font without scaling
-%\usepackage{inconsolata}
-
 \usepackage[T1]{fontenc}
-\usepackage[sfdefault,scaled=.85]{FiraSans}
-\usepackage{newtxsf}
+\usepackage{arev} % Load Arev font without scaling
+\usepackage{inconsolata}
+
+%\usepackage[T1]{fontenc}
+%\usepackage[sfdefault,scaled=.85]{FiraSans}
+%\usepackage{newtxsf}
 \usepackage{float}
 
 % Packages for better typography and document layout
@@ -23,6 +23,10 @@
 \usepackage{xcolor}
 \usepackage{svg}
 \usepackage{svg-extract}
+\usepackage{caption}
+
+
+\captionsetup{font=small}
 
 % Page geometry
 \usepackage[a4paper, margin=0.8in, columnsep=20pt]{geometry}
@@ -83,10 +87,11 @@
 }
 
 \begin{document}
+\fontsize{9}{11.5}\selectfont % Set font size to 12pt with a baseline of 14pt
 
 % Title 
 \title{Discrete Simulation: Homework 1}
-\author{\authorname \\ \small Mahidol University International College}
+\author{\small \authorname \\ \small Mahidol University International College}
 \date{\small \today}
 
 
@@ -101,11 +106,13 @@
 
 \section{Birthday Problem}
 
+The simulations ran were set to $seed=27$ \\and $N=100000$.
+
 \begin{enumerate}[label=\alph*)]
     
 \item \begin{align*}
 p_{10} &= 0.1169 \\
-CI &= [(0.1169, 0.1189]
+CI &= [0.1169, 0.1189]
 \end{align*}
     
 \item \begin{align*}
@@ -119,33 +126,27 @@ CI &= [0.7059, 0.7088]
 \end{align*}
 
 
-\item \begin{align*}
-p_{40} &= 100 \\
-CI &= [100, 100]
-\end{align*}
-	
-Found n from extracting the smallest difference from a function of varying n's and a function of p = 0.5.
-\vspace{-5pt}
-\begin{lstlisting}
-n = np.argmin(np.abs((np.ones((51, 1)) * 0.5) - ps)) + 1
-intersection  = (n, ps[n].item())
-\end{lstlisting}	
-\vspace{-10pt}
+\item 
+Found n that satisfies the condition $p_n \le 0.5$  from extracting the smallest difference from varying $n$'s of $p_n$ and the function of $p=0.5$.
+
 	
 \begin{figure}[H]
     \centering
     \includesvg[width=0.5\textwidth]{p1_d.svg} % Adjust the width as needed
-    \caption{This is a caption for the SVG figure.}
+    \caption{Closest point to $p=0.5$ was $p_{23}=0.54$ which satisfies the condition.}
     \label{fig:my_svg}
 \end{figure}
 
 \end{enumerate}
 
 \section{Alice and Bob Play a Game}
-\lipsum[3-4] % Placeholder text
+\lipsum[1] % Placeholder text
 
 \section{Practice with Uniform and Geometric Distributions}
-\lipsum[5-6] % Placeholder text
+\lipsum[1] % Placeholder text
+
+\section{Source Code}
+\lipsum[1] % Placeholder text
 
 
 % References
