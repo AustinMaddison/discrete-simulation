@@ -51,14 +51,23 @@
 \pagestyle{fancy}
 \fancyhf{}
 
+
+% First Page
+\fancypagestyle{plain}{
+\fancyfoot[R]{\small \thepage} 
+\fancyhead[L]{}
+\fancyhead[R]{}
+}
+
+
 % Custom header
-\fancyhead[L]{\small Discrete Simulation: \slshape Homework 1}
-\fancyhead[R]{\small \authorname}
+\fancyhead[L]{\small Discrete Simulation}
+\fancyhead[R]{\small Homework 1}
 \renewcommand{\headrulewidth}{0pt}
 
 % Custom footer
 %\fancyfoot[L]{\small Title, Date}
-\fancyfoot[R]{\thepage}
+\fancyfoot[R]{\small \thepage}
 
 % Line spacing
 \usepackage{setspace}
@@ -78,7 +87,7 @@
 % Hyperlinks
 \usepackage{hyperref}
 \hypersetup{
-    colorlinks=true,
+    colorlinks=false,
     linkcolor=blue,
     citecolor=blue,
     urlcolor=blue,
@@ -88,6 +97,8 @@
 
 \begin{document}
 \fontsize{9}{11.5}\selectfont % Set font size to 12pt with a baseline of 14pt
+
+
 
 % Title 
 \title{Discrete Simulation: Homework 1}
@@ -104,7 +115,7 @@
 %  \vspace{1cm}
 }]
 
-\section{Birthday Problem}
+\section{Birthday Problem}\label{p1}
 
 The simulations ran were set to $seed=27$ \\and $N=100000$.
 
@@ -134,13 +145,63 @@ Found n that satisfies the condition $p_n \le 0.5$  from extracting the smallest
     \centering
     \includesvg[width=0.5\textwidth]{p1_d.svg} % Adjust the width as needed
     \caption{Closest point to $p=0.5$ was $p_{23}=0.54$ which satisfies the condition.}
-    \label{fig:my_svg}
 \end{figure}
 
 \end{enumerate}
 
+\pagebreak
+
 \section{Alice and Bob Play a Game}
-\lipsum[1] % Placeholder text
+The strategy I let Alice have is the following...
+\\\\
+\noindent
+\textbf{Case 1: Found Exclusive Output}\\
+She presses the button recording $n$ output values $x_1, x_2, ... x_n$.
+As she records each output she checks whether $x_i$ is exclusive to one of the buttons output range. If $x_i$ is exclusive she returns the corresponding button as the answer.
+\\\\
+\textbf{Case 2: No Exclusive Output}\\
+After she presses the button $n$ times with no exclusive output appearing. She calculates $\bar{x}$ and finds the minimum difference between the mean output range of the 2 buttons. She returns the corresponding button that gets the minimum distance.
+\\\\
+\textbf{Psuedocode}\\
+Although the source code differs because loops are removed for speed, the idea is the same.
+\vspace{-4pt}
+\begin{lstlisting}
+xs = []
+for i in range(0, n):	
+	x_n = button_unknown.get_next_value()
+	xs.append(x_n) 	
+	
+	# Case 1: Found exclusive output.
+	if(x_n == 1)
+		return 1  # it is button 1
+	if(x_n == 100)
+		return 2  # it is button 2
+		
+# Case 2: No exclusive output. Evaluate the minimum distance of means.
+x_mean = sum(xs) / n
+button_1_mean = (1 + 99)/2
+button_2_mean = (2 + 100)/2
+
+return argmin([abs(x_mean - button_1_mean), abs(x_mean - button_2_mean)]) + 1
+\end{lstlisting}
+
+\subsection*{Find $n$ such that Alice is correct $\le 0.9$}
+Similar to problem \ref{p1}.\nameref{p1}, I sampled Alice's strategy over some reasonable range of $n$ $[0, 500]$ and extract the n that results in probability $p$ that Alice is correct is atleast $0.99$. I set the seed=27 and  ran 1000 trials for each all $n$'s.
+
+
+\begin{figure}[H]
+    \centering
+    \includesvg[width=0.5\textwidth]{p2_1.svg} % Adjust the width as needed
+    \caption{Closest point to $p=0.99$ was $p_{375}=0.990$ which satisfies the condition.}
+    \label{fig:Figure2}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includesvg[width=0.5\textwidth]{p2_2.svg} % Adjust the width as needed
+    \caption{y-lim[0.8, 1.0] of Figure~\ref{fig:Figure2}.}
+\end{figure}
+
 
 \section{Practice with Uniform and Geometric Distributions}
 \lipsum[1] % Placeholder text
