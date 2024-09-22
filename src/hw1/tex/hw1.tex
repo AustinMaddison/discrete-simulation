@@ -1,31 +1,43 @@
 \documentclass[twocolumn]{article}
 
 \newcommand{\authorname}{Austin J. Maddison}
-\newcommand{\titletext}{Discrete Simulation Homework 1}
+\newcommand{\course}{Discrete Simulation}
+\newcommand{\courseid}{ICMA393}
+\newcommand{\docname}{HW1}
+\newcommand{\titletext}{\course: \docname}
 
-
-% math font
-\usepackage[T1]{fontenc}
-\usepackage{arev}
-\DeclareMathSizes{1}{1}{1}{1}  % display, text, script, scriptscript
+%
 
 
 %\usepackage{fontspec}	
 \usepackage[no-math]{fontspec}	
 \setmainfont{HelveticaNowText}
-\setmonofont{JetBrainsMonoNerdFont}
-
-
-% Define different styles for HelveticaNowText weights
 \newfontface\hh{HelveticaNowText-ExtraBold}
 \newfontface\lt{HelveticaNowText-Light}      
 \newfontface\xx{HelveticaNowText-ExtraLight} 
-\newfontface\mm{HelveticaNowText Medium}     
+\newfontface\mm{HelveticaNowText Medium}
+
+\newfontfamily{\displayfont}{HelveticaNowDisplay}
+\newfontface\dslt{HelveticaNowDisplay-Light}
+\newfontface\dsmm{HelveticaNowDisplay-Medium}
+\newfontface\dsbd{HelveticaNowDisplay-Bold}
+
+\newfontfamily{\microfont}{HelveticaNowMicro}
+\newfontface\mclt{HelveticaNowMicro-Light}
+\newfontface\mcmm{HelveticaNowMicro-Medium}
+\newfontface\mcbd{HelveticaNowMicro-Bold}
+
+\setmonofont{SFMono}
+
+\usepackage[lining]{FiraSans}
+\usepackage[fakebold]{firamath-otf}
+\usepackage{unicode-math}
+\setmathfont{FiraMath}
+\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
 
 
-\usepackage{float}
 
-% Packages for better typography and document layout
+
 \usepackage{microtype}   % Improves text appearance with microtypography
 \usepackage{amsmath}     % For better math support
 \usepackage{graphicx}    % For including graphics
@@ -35,35 +47,19 @@
 \usepackage{svg}
 \usepackage{svg-extract}
 \usepackage{caption}
+\usepackage{float}
 
 
-\captionsetup{font=small}
-
-% Page geometry
 \usepackage[a4paper, margin=0.8in, columnsep=20pt]{geometry}
 
+\captionsetup{font=small}
 \definecolor{gray}{rgb}{0.55, 0.55, 0.55}
-
-\usepackage{listings}
-\lstset{
-  language=Python,                     % Use Python language syntax
-  basicstyle=\ttfamily\footnotesize,           % Use modern monospace font for code
-  keywordstyle=\bfseries\color{black},   % Bold and blue keywords
-  stringstyle=\color{black},              % Strings in red
-  commentstyle=\color{gray},            % Comments in gray
-  showstringspaces=false,               % Don't show spaces in strings
-  breaklines=true,                      % Break long lines
-  tabsize=4,                            % Set tab size to 4 spaces
-}
-
-% Two-column layout
 \setlength{\columnsep}{20pt}  % Space between columns
 
 % Headers and Footers
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-
 
 % First Page
 \fancypagestyle{plain}{
@@ -72,10 +68,9 @@
 \fancyhead[R]{}
 }
 
-
 % Custom header
-\fancyhead[L]{\small Discrete Simulation}
-\fancyhead[R]{\small Homework 1}
+\fancyhead[L]{\scriptsize \MakeUppercase{ \microfont \courseid~\course}}
+\fancyhead[R]{\scriptsize \MakeUppercase{ \microfont \docname}}
 \renewcommand{\headrulewidth}{0pt}
 
 % Custom footer
@@ -88,10 +83,9 @@
 
 %\setlength{\mathindent}{0pt} % This removes the indentation for equations
 
-
 % Section formatting
 \usepackage{titlesec}
-\titleformat{\section}[block]{\large\mm}{\thesection.}{1em}{}
+\titleformat{\section}[block]{\large\dsbd}{\thesection.}{1em}{}
 \titleformat{\subsection}[block]{\normalsize\mm}{\thesubsection.}{1em}{}
 
 % Bibliography style
@@ -108,12 +102,24 @@
     pdfauthor={Author's Name},
 }
 
+\usepackage{listings}
+\lstset{
+  language=Python,                     % Use Python language syntax
+  basicstyle=\ttfamily\footnotesize,           % Use modern monospace font for code
+  keywordstyle=\bfseries\color{black},   % Bold and blue keywords
+  stringstyle=\color{black},              % Strings in red
+  commentstyle=\color{gray},            % Comments in gray
+  showstringspaces=false,               % Don't show spaces in strings
+  breaklines=true,                      % Break long lines
+  tabsize=4,                            % Set tab size to 4 spaces
+}
+
 \begin{document}
 %\fontsize{10}{10.5}\selectfont % Set font size to 12pt with a baseline of 14pt
 
 
 % Title 
-\title{\strong{ Discrete Simulation: Homework 1}}
+\title{\displayfont \strong{\titletext}}
 \author{\small \authorname \\ \small Mahidol University International College}
 \date{\small \today}
 
@@ -200,7 +206,7 @@ return argmin([abs(x_mean - button_1_mean), abs(x_mean - button_2_mean)]) + 1
 \end{lstlisting}
 
 \subsection*{Find $n$ such that Alice is correct $\ge 0.99$}
-Similar to problem \ref{p1} \nameref{p1}, I sampled Alice's strategy over some "reasonable" range of $n$ $[0, 500]$ and extract the n that results in probability $p$ that Alice is correct is atleast $0.99$. I set the $seed=27$ and  ran $400000$ trials for all $n$'s.
+Similar to problem \ref{p1} \nameref{p1}, I sampled Alice's strategy over some ``reasonable'' range of $n$ $[0, 500]$ and extract the n that results in probability $p$ that Alice is correct is atleast $0.99$. I set the $seed=27$ and  ran $400000$ trials for all $n$'s.
 
 
 \begin{figure}[H]
