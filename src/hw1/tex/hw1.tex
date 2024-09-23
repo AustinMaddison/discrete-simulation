@@ -1,31 +1,31 @@
 \documentclass[twocolumn]{article}
 
-\newcommand{\authorname}{Austin J. Maddison}
+\newcommand{\authorname}{Austin Jetrin Maddison}
 \newcommand{\course}{Discrete Simulation}
 \newcommand{\courseid}{ICMA393}
 \newcommand{\docname}{HW1}
 \newcommand{\titletext}{\course: \docname}
 
-%
 
 
 %\usepackage{fontspec}	
 \usepackage[no-math]{fontspec}	
-\setmainfont{HelveticaNowText}
-\newfontface\hh{HelveticaNowText-ExtraBold}
-\newfontface\lt{HelveticaNowText-Light}      
-\newfontface\xx{HelveticaNowText-ExtraLight} 
-\newfontface\mm{HelveticaNowText Medium}
+\setmainfont{SF-Pro-Text}
+\newfontface\hh{SF-Pro-Text-Heavy}
+\newfontface\lt{SF-Pro-Text-Light}      
+\newfontface\xx{SF-Pro-Text-UltraLight} 
+\newfontface\mm{SF-Pro-Text-Medium}
 
-\newfontfamily{\displayfont}{HelveticaNowDisplay}
-\newfontface\dslt{HelveticaNowDisplay-Light}
-\newfontface\dsmm{HelveticaNowDisplay-Medium}
-\newfontface\dsbd{HelveticaNowDisplay-Bold}
+\newfontfamily{\displayfont}{SF-Pro-Display}
+\newfontface\dslt{SF-Pro-Display-Light}
+\newfontface\dsmm{SF-Pro-Display-Medium}
+\newfontface\dsbd{SF-Pro-Display-Bold}
+\newfontface\dssbd{SF-Pro-Display-Semibold}
 
-\newfontfamily{\microfont}{HelveticaNowMicro}
-\newfontface\mclt{HelveticaNowMicro-Light}
-\newfontface\mcmm{HelveticaNowMicro-Medium}
-\newfontface\mcbd{HelveticaNowMicro-Bold}
+\newfontfamily{\microfont}{SF-Compact-Text}
+\newfontface\mclt{SF-Compact-Text-Light}
+\newfontface\mcmm{SF-Compact-Text-Medium}
+\newfontface\mcbd{SF-Compact-Text-Bold}
 
 \setmonofont{SFMono}
 
@@ -34,8 +34,6 @@
 \usepackage{unicode-math}
 \setmathfont{FiraMath}
 \renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
-
-
 
 
 \usepackage{microtype}   % Improves text appearance with microtypography
@@ -64,13 +62,14 @@
 % First Page
 \fancypagestyle{plain}{
 \fancyfoot[R]{\small \thepage} 
+\fancyfoot[L]{} 
 \fancyhead[L]{}
 \fancyhead[R]{}
 }
 
 % Custom header
-\fancyhead[L]{\scriptsize \MakeUppercase{ \microfont \courseid~\course}}
-\fancyhead[R]{\scriptsize \MakeUppercase{ \microfont \docname}}
+\fancyfoot[L]{\scriptsize \MakeUppercase{ \microfont \courseid~\course}}
+\fancyhead[L]{\scriptsize \MakeUppercase{ \microfont \docname}}
 \renewcommand{\headrulewidth}{0pt}
 
 % Custom footer
@@ -86,7 +85,7 @@
 % Section formatting
 \usepackage{titlesec}
 \titleformat{\section}[block]{\large\dsbd}{\thesection.}{1em}{}
-\titleformat{\subsection}[block]{\normalsize\mm}{\thesubsection.}{1em}{}
+\titleformat{\subsection}[block]{\normalsize \dssbd}{\thesubsection.}{1em}{}
 
 % Bibliography style
 \usepackage[numbers,sort&compress]{natbib} % For numbered citations
@@ -115,31 +114,29 @@
 }
 
 \begin{document}
-%\fontsize{10}{10.5}\selectfont % Set font size to 12pt with a baseline of 14pt
-
+\fontsize{9.5}{11.5}\selectfont % Set font size to 12pt with a baseline of 14pt
 
 % Title 
-\title{\displayfont \strong{\titletext}}
-\author{\small \authorname \\ \small Mahidol University International College}
-\date{\small \today}
-
+\title{
+  \raggedright
+  \large \displayfont \strong{\courseid~\titletext} \\[10pt]  % Adjust spacing if needed
+  \footnotesize \microfont \authorname \\ 
+  \footnotesize Mahidol University International College \\
+  \footnotesize \today
+}
+\date{} 
 
 %
 \twocolumn[{
-  \maketitle
-%  \begin{abstract}
-%    \noindent Your abstract goes here. This is a brief summary of your paper.
-%  \end{abstract}
-%  \vspace{1cm}
+	\vspace*{-1cm}
+	\maketitle
+	\vspace*{-0.5cm}
+
 }]
-
-
-
 
 \section{Birthday Problem}\label{p1}
 
 The simulations ran were set to $seed=27$ \\and $N=100000$.
-
 \begin{enumerate}[label=\alph*)]
     
 \item \begin{align*}
@@ -157,15 +154,13 @@ p_{30} &= 0.70595 \\
 CI &= [0.70594, 0.70877]
 \end{align*}
 
-
 \item 
-Found n that satisfies the condition $p_n \ge 0.5$  from extracting the smallest difference from varying $n$'s of $p_n$ and the function of $p=0.5$.
-
+Found n that satisfies the condition $p_n \ge 0.5$ from running the simulation on a range of n's [0, 50] and selecting the first $p_n \ge 0.5$.
 	
 \begin{figure}[H]
     \centering
     \includesvg[width=0.5\textwidth]{p1_d.svg} % Adjust the width as needed
-    \caption{Closest point to $p=0.5$ was $p_{23}=0.54$ which satisfies the condition.}
+    \caption{Closest point to $p=0.5$ was $p_{23}=0.5394$ which satisfies the condition.}
 \end{figure}
 
 \end{enumerate}
