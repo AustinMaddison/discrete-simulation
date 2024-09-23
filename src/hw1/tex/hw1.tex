@@ -10,22 +10,21 @@
 
 %\usepackage{fontspec}	
 \usepackage[no-math]{fontspec}	
-\setmainfont{SF-Pro-Text}
-\newfontface\hh{SF-Pro-Text-Heavy}
-\newfontface\lt{SF-Pro-Text-Light}      
-\newfontface\xx{SF-Pro-Text-UltraLight} 
-\newfontface\mm{SF-Pro-Text-Medium}
+\setmainfont{HelveticaNowText}
+\newfontface\hh{HelveticaNowText-ExtraBold}
+\newfontface\lt{HelveticaNowText-Light}      
+\newfontface\xx{HelveticaNowText-ExtraLight} 
+\newfontface\mm{HelveticaNowText Medium}
 
-\newfontfamily{\displayfont}{SF-Pro-Display}
-\newfontface\dslt{SF-Pro-Display-Light}
-\newfontface\dsmm{SF-Pro-Display-Medium}
-\newfontface\dsbd{SF-Pro-Display-Bold}
-\newfontface\dssbd{SF-Pro-Display-Semibold}
+\newfontfamily{\displayfont}{HelveticaNowDisplay}
+\newfontface\dslt{HelveticaNowDisplay-Light}
+\newfontface\dsmm{HelveticaNowDisplay-Medium}
+\newfontface\dsbd{HelveticaNowDisplay-Bold}
 
-\newfontfamily{\microfont}{SF-Compact-Text}
-\newfontface\mclt{SF-Compact-Text-Light}
-\newfontface\mcmm{SF-Compact-Text-Medium}
-\newfontface\mcbd{SF-Compact-Text-Bold}
+\newfontfamily{\microfont}{HelveticaNowMicro}
+\newfontface\mclt{HelveticaNowMicro-Light}
+\newfontface\mcmm{HelveticaNowMicro-Medium}
+\newfontface\mcbd{HelveticaNowMicro-Bold}
 
 \setmonofont{SFMono}
 
@@ -85,7 +84,7 @@
 % Section formatting
 \usepackage{titlesec}
 \titleformat{\section}[block]{\large\dsbd}{\thesection.}{1em}{}
-\titleformat{\subsection}[block]{\normalsize \dssbd}{\thesubsection.}{1em}{}
+\titleformat{\subsection}[block]{\normalsize \mm}{\thesubsection.}{1em}{}
 
 % Bibliography style
 \usepackage[numbers,sort&compress]{natbib} % For numbered citations
