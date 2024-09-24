@@ -200,7 +200,7 @@ return argmin([abs(x_mean - button_1_mean), abs(x_mean - button_2_mean)]) + 1
 \end{lstlisting}
 
 \subsection*{Find $n$ such that Alice is correct $\ge 0.99$}
-Similar to problem \ref{p1} \nameref{p1}, I sampled Alice's strategy over some ``reasonable'' range of $n$ $[0, 500]$ and extract the n that results in probability $p$ that Alice is correct is atleast $0.99$. I set the $seed=27$ and  ran $400000$ trials for all $n$'s.
+I sampled Alice's strategy varying $n$ between $[0, 500]$ and extracted the first n that results in probability atleast $0.99$. I set the $seed=27$ and  ran $400000$ trials for all $n$'s.
 
 
 \begin{figure}[H]
@@ -219,14 +219,15 @@ Similar to problem \ref{p1} \nameref{p1}, I sampled Alice's strategy over some `
 
 \section{Practice with Uniform and Geometric Distributions}
 
+\textbf{note:}
+No need to write program for this
+
 
 \section*{Source Code}
 \href{https://github.com/AustinMaddison/discrete-simulation/tree/main/src/hw1}{https://github.com/AustinMaddison/discrete-simulation/tree/main/src/hw1}
 
-
 % References
 %\bibliographystyle{unsrt}
 %\bibliography{references}
-
 
 \end{document}
