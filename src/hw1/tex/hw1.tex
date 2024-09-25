@@ -136,7 +136,8 @@
 
 \section{Birthday Problem}\label{p1}
 
-The simulations ran were set to $seed=27$ \\and $N=100000$.
+The simulations ran were set to $seed=27$ \\and $N=400000$.
+
 \begin{enumerate}[label=\alph*)]
     
 \item \begin{align*}
@@ -160,26 +161,49 @@ Found n that satisfies the condition $p_n \ge 0.5$ from running the simulation o
 \begin{figure}[H]
     \centering
     \includesvg[width=0.5\textwidth]{p1_d.svg} % Adjust the width as needed
-    \caption{Closest point to $p=0.5$ was $p_{23}=0.5394$ which satisfies the condition.}
+    \caption{The first point $\geq p=0.5$ was $p_{23}=0.507$ which satisfies the condition.}
 \end{figure}
 
-\end{enumerate}
 \pagebreak
+
+\item 
+We can model $p_n$ using a product function. We do this by getting the product of probabilities where we always pick somebody with a unique birthday. Then we invert the result by minus 1 to get the probability of picking somebody with a non-unique birthday.
+
+\begin{align*}
+p(n) = 1 - \prod_{i=0}^{n-1} \frac{\text{365} - i}{365}
+\end{align*}
+
+\begin{figure}[H]
+    \centering
+    \includesvg[width=0.5\textwidth]{p1_e.svg} % Adjust the width as needed
+    \caption{$p(n)$ results in a seemingly identical output as the simulation. The MSE of simulation and $p(n)$ MSE = $2.013\times10^{-7}$ }.
+\end{figure}
+
+For all intensive purposes p(n) successfully models the results in the simulation.
+
+\end{enumerate}
+
 
 \section{Alice and Bob Play a Game}
 The strategy I let Alice have is the following...
-\\\\
+\\
+\\
+
 \noindent
 \textbf{Case 1: Found Exclusive Output}\\
 She presses the button recording $n$ output values $x_1, x_2, ... x_n$.
 As she records each output she checks whether $x_i$ is exclusive to one of the buttons output range. If $x_i$ is exclusive she returns the corresponding button as the answer.
-\\\\
+\\
+\\
+
 \textbf{Case 2: No Exclusive Output}\\
 If she presses the button $n$ times with no exclusive output appearing. She calculates $\bar{x}$ and finds the minimum difference between the mean output range of the 2 buttons. She returns the corresponding button that gets the minimum distance.
-\\\\
+\\
+\\
+
 \textbf{Psuedocode}\\
 Although the source code differs because loops are removed for speed, the idea is the same.
-%\vspace{-4pt}
+
 \begin{lstlisting}
 xs = []
 for i in range(0, n):	
@@ -207,20 +231,57 @@ I sampled Alice's strategy varying $n$ between $[0, 500]$ and extracted the firs
 \begin{figure}[H]
     \centering
     \includesvg[width=0.5\textwidth]{p2_1.svg} % Adjust the width as needed
-    \caption{Closest point to $p=0.99$ was $p_{384}=0.990$ which satisfies the condition.}
+    \caption{The first point to $\ge p=0.99$ was $p_{384}=0.990$ which satisfies the condition.}
     \label{fig:Figure2}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includesvg[width=0.5\textwidth]{p2_2.svg} % Adjust the width as needed
-    \caption{y-lim[0.8, 1.0] of Figure~\ref{fig:Figure2}.}
+    \caption{Crop of Figure~\ref{fig:Figure2}.}
 \end{figure}
 
 
 \section{Practice with Uniform and Geometric Distributions}
 
+First find E[X] and V[X] of the geometric distribution. Since X is a fair dice $p\{X=5\}= 1/6$.
 
+\begin{align*}
+E[X] &= \frac{1}{1/6} = 6 \\
+V[X] &= \frac{1-p}{(1/6)^2} = 30 \\
+\end{align*}
+
+Then I do the same for uniform distribution of $Y$ while equating the corresponding known values from $X$.
+
+\begin{align*}
+E[Y] &= \frac{n-1}{2} = 6 \\
+V[Y] &= \frac{(n^2-1)}{12} = 30 \\
+\end{align*}
+
+Since $n$ is determined by the setting of $a$ and $b$ we can rewrite it like this.
+
+\begin{align*}
+E[Y] &= \frac{(b-a+1)-1}{2} = 6 \\
+V[Y] &= \frac{(b-a+1)^2-1}{12} = 30 \\
+\end{align*}
+
+Now it's easy to find $a$ and $b$ by solving the system of equations. However I am not going to do that because that is not how I found it at first.
+\\
+\\
+What I did is rearranged $E[Y]$ such that $a+b=12$. Then I did a search of pairs of $a,b$ st, $a+b=12$ and $a<b$ until I got $V[Y]=30$.
+
+
+\begin{figure}[H]
+    \centering
+    \includesvg[width=0.5\textwidth]{p3.svg} % Adjust the width as needed
+    \caption{The size and opacity of the discs is the inverse distance away from V[Y] = 30.}
+\end{figure}
+
+\noindent
+For $E[X]=E[Y]$ and $V[X]=V[Y]$,
+\begin{align*}
+a=-3, b=15
+\end{align*}
 
 
 \section*{Source Code}
