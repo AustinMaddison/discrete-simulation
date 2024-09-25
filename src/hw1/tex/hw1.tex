@@ -132,36 +132,38 @@
 	\vspace*{-1cm}
 	\maketitle
 	\vspace*{-0.5cm}
-
 }]
 
 \section{Birthday Problem}\label{p1}
 
 The simulations ran were set to $seed=27$ \\and $N=400000$.
 
-\begin{enumerate}[label=\alph*)]
+\begin{enumerate}[label=\alph*),itemsep=-1.5em]
     
-\vspace{-10pt}
-\item \begin{align*}
+\item 
+\begin{align*}
 p_{10} &= 0.11686 \\
 CI &= [0.11685, 0.11885]
 \end{align*}
 
-\vspace{-10pt}
-\item \begin{align*}
+
+\item 
+\begin{align*}
 p_{20} &=  0.41126 \\
 CI &= [0.41125, 0.41430]
 \end{align*}
 
-\vspace{-10pt}
-\item \begin{align*}
+
+\item
+\begin{align*}
 p_{30} &= 0.70595 \\
-CI &= [0.70594, 0.70877]
+CI &= [0.70594, 0.70877]\\
 \end{align*}
 
 \item 
-Found n that satisfies the condition $p_n \ge 0.5$ from running the simulation on a range of n's [0, 50] and selecting the first $p_n \ge 0.5$.
-	
+Found $n$ that satisfies the condition $p_n \ge 0.5$ from running the simulation on a range of $n$'s $[0, 50]$ and selecting the first $p_n \ge 0.5$.
+
+\vspace{-5pt}
 \begin{figure}[H]
     \centering
     \includesvg[width=0.5\textwidth]{p1_d.svg} % Adjust the width as needed
@@ -181,7 +183,7 @@ p(n) = 1 - \prod_{i=0}^{n} \frac{\text{365} - i}{365}
 \begin{figure}[H]
     \centering
     \includesvg[width=0.5\textwidth]{p1_e.svg} % Adjust the width as needed
-    \caption{$p(n)$ results are similar to the simulation. The difference between simulation $p_n$ and $p(n)$ is MSE = $2.013\times10^{-7}$.}
+    \caption{$p(n)$ results are similar to the simulation. The difference between simulation $p_n$ and $p(n)$ is $MSE = 2.013\times10^{-7}$.}
 \end{figure}
 \vspace{-14pt}
 For all intensive purposes $p(n)$ models the results in simulation $p_n$. 
@@ -286,7 +288,7 @@ What I did is rearranged $E[Y]$ such that $a+b=12$. Then I did a search of pairs
     \centering
     \includesvg[width=0.5\textwidth]{p3.svg} % Adjust the width as needed
     \vspace{-10pt}
-    \caption{The size and opacity of the discs is the inverse distance away from V[Y] = 30.}
+    \caption{The size and opacity of the discs is the inverse distance away from $V[Y] = 30$.}
 \end{figure}
 
 \vspace{-10pt}
