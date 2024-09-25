@@ -1,5 +1,7 @@
 import numpy as np
 from matplotlib import pyplot as plt
+from matplotlib import cm
+
 
 plt.rcParams['text.usetex'] = True
 plt.rcParams['text.latex.preamble'] = (r'\usepackage{amsmath}'
