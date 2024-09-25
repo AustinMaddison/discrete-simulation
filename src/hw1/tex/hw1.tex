@@ -112,6 +112,7 @@
   tabsize=4,                            % Set tab size to 4 spaces
 }
 
+
 \begin{document}
 \fontsize{9.5}{11.5}\selectfont % Set font size to 12pt with a baseline of 14pt
 
@@ -140,16 +141,19 @@ The simulations ran were set to $seed=27$ \\and $N=400000$.
 
 \begin{enumerate}[label=\alph*)]
     
+\vspace{-10pt}
 \item \begin{align*}
 p_{10} &= 0.11686 \\
 CI &= [0.11685, 0.11885]
 \end{align*}
-    
+
+\vspace{-10pt}
 \item \begin{align*}
 p_{20} &=  0.41126 \\
 CI &= [0.41125, 0.41430]
 \end{align*}
 
+\vspace{-10pt}
 \item \begin{align*}
 p_{30} &= 0.70595 \\
 CI &= [0.70594, 0.70877]
@@ -161,25 +165,26 @@ Found n that satisfies the condition $p_n \ge 0.5$ from running the simulation o
 \begin{figure}[H]
     \centering
     \includesvg[width=0.5\textwidth]{p1_d.svg} % Adjust the width as needed
-    \caption{The first point $\geq p=0.5$ was $p_{23}=0.507$ which satisfies the condition.}
+    \caption{The first point $\geq p=0.5$ was $p_{23}=0.506$ which satisfies the condition.}
 \end{figure}
 
-\pagebreak
 
 \item 
 We can model $p_n$ using a product function. We do this by getting the product of probabilities where we always pick somebody with a unique birthday. Then we invert the result by minus 1 to get the probability of picking somebody with a non-unique birthday.
 
+\vspace{-10pt}
 \begin{align*}
-p(n) = 1 - \prod_{i=0}^{n-1} \frac{\text{365} - i}{365}
+p(n) = 1 - \prod_{i=0}^{n} \frac{\text{365} - i}{365}
 \end{align*}
+\vspace{-10pt}
 
 \begin{figure}[H]
     \centering
     \includesvg[width=0.5\textwidth]{p1_e.svg} % Adjust the width as needed
-    \caption{$p(n)$ results in a seemingly identical output as the simulation. The MSE of simulation and $p(n)$ MSE = $2.013\times10^{-7}$ }.
+    \caption{$p(n)$ results are similar to the simulation. The difference between simulation $p_n$ and $p(n)$ is MSE = $2.013\times10^{-7}$.}
 \end{figure}
-
-For all intensive purposes p(n) successfully models the results in the simulation.
+\vspace{-14pt}
+For all intensive purposes $p(n)$ models the results in simulation $p_n$. 
 
 \end{enumerate}
 
@@ -187,22 +192,21 @@ For all intensive purposes p(n) successfully models the results in the simulatio
 \section{Alice and Bob Play a Game}
 The strategy I let Alice have is the following...
 \\
-\\
 
 \noindent
 \textbf{Case 1: Found Exclusive Output}\\
 She presses the button recording $n$ output values $x_1, x_2, ... x_n$.
 As she records each output she checks whether $x_i$ is exclusive to one of the buttons output range. If $x_i$ is exclusive she returns the corresponding button as the answer.
 \\
-\\
 
 \textbf{Case 2: No Exclusive Output}\\
 If she presses the button $n$ times with no exclusive output appearing. She calculates $\bar{x}$ and finds the minimum difference between the mean output range of the 2 buttons. She returns the corresponding button that gets the minimum distance.
 \\
-\\
 
 \textbf{Psuedocode}\\
 Although the source code differs because loops are removed for speed, the idea is the same.
+
+\pagebreak
 
 \begin{lstlisting}
 xs = []
@@ -227,7 +231,6 @@ return argmin([abs(x_mean - button_1_mean), abs(x_mean - button_2_mean)]) + 1
 \subsection*{Find $n$ such that Alice is correct $\ge 0.99$}
 I sampled Alice's strategy varying $n$ between $[0, 500]$ and extracted the first n that results in probability atleast $0.99$. I set the $seed=27$ and  ran $400000$ trials for all $n$'s.
 
-
 \begin{figure}[H]
     \centering
     \includesvg[width=0.5\textwidth]{p2_1.svg} % Adjust the width as needed
@@ -241,44 +244,54 @@ I sampled Alice's strategy varying $n$ between $[0, 500]$ and extracted the firs
     \caption{Crop of Figure~\ref{fig:Figure2}.}
 \end{figure}
 
-
+\pagebreak
+\raggedbottom
 \section{Practice with Uniform and Geometric Distributions}
 
 First find E[X] and V[X] of the geometric distribution. Since X is a fair dice $p\{X=5\}= 1/6$.
 
+\vspace{-10pt}
 \begin{align*}
 E[X] &= \frac{1}{1/6} = 6 \\
 V[X] &= \frac{1-p}{(1/6)^2} = 30 \\
 \end{align*}
 
+\vspace{-20pt}
 Then I do the same for uniform distribution of $Y$ while equating the corresponding known values from $X$.
 
+\vspace{-25pt}
 \begin{align*}
 E[Y] &= \frac{n-1}{2} = 6 \\
 V[Y] &= \frac{(n^2-1)}{12} = 30 \\
 \end{align*}
 
+\vspace{-18pt}
 Since $n$ is determined by the setting of $a$ and $b$ we can rewrite it like this.
 
+\vspace{-10pt}
 \begin{align*}
 E[Y] &= \frac{(b-a+1)-1}{2} = 6 \\
 V[Y] &= \frac{(b-a+1)^2-1}{12} = 30 \\
 \end{align*}
 
-Now it's easy to find $a$ and $b$ by solving the system of equations. However I am not going to do that because that is not how I found it at first.
+\vspace{-20pt}
+Now it's easy to find $a$ and $b$ by solving the system of equations. However I am not going to do that because that is not how I found it at first. \\
+\vspace{-10pt}
 \\
-\\
-What I did is rearranged $E[Y]$ such that $a+b=12$. Then I did a search of pairs of $a,b$ st, $a+b=12$ and $a<b$ until I got $V[Y]=30$.
+What I did is rearranged $E[Y]$ such that $a+b=12$. Then I did a search of pairs of $a,b$ st, $a+b=12$ and $a<b$ until I got $V[Y]=30$.  
 
 
+\vspace{-10pt}
 \begin{figure}[H]
     \centering
     \includesvg[width=0.5\textwidth]{p3.svg} % Adjust the width as needed
+    \vspace{-10pt}
     \caption{The size and opacity of the discs is the inverse distance away from V[Y] = 30.}
 \end{figure}
 
-\noindent
+\vspace{-10pt}
 For $E[X]=E[Y]$ and $V[X]=V[Y]$,
+\vspace{-10pt}
 \begin{align*}
 a=-3, b=15
 \end{align*}
