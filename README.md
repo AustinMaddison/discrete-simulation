@@ -1,5 +1,5 @@
 
-### Coursework
+## Coursework
 - **WK 1**
   - L1: [Toss Coin Experiment](src%2Fwk1%2Ftoss_coin.mlx)
   - L2: Lots of Defs and Proofs on Probability.
@@ -25,3 +25,4 @@ A brief review of statistics and probability, methods of estimating pi, the Mont
 problem, Benford’s law, Cfinite recurrences, Poisson clocks and exponential buses,
 descent and peak polynomials, X-rays of random permutations, the toilet problem,
 one-dimensional random walks on Z, the coupon collector problem and variants.
+
