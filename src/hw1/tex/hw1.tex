@@ -201,14 +201,32 @@ She presses the button recording $n$ output values $x_1, x_2, ... x_n$.
 As she records each output she checks whether $x_i$ is exclusive to one of the buttons output range. If $x_i$ is exclusive she returns the corresponding button as the answer.
 \\
 
+\noindent
 \textbf{Case 2: No Exclusive Output}\\
 If she presses the button $n$ times with no exclusive output appearing. She calculates $\bar{x}$ and finds the minimum difference between the mean output range of the 2 buttons. She returns the corresponding button that gets the minimum distance.
 \\
 
+\noindent
+\textbf{Find $n$ such that Alice is correct $\ge 0.99$}
+I sampled Alice's strategy varying $n$ between $[0, 500]$ and extracted the first n that results in probability atleast $0.99$. I set the $seed=27$ and  ran $400000$ trials for all $n$'s.
+
+\begin{figure}[H]
+	\centering
+	\includesvg[width=0.5\textwidth]{p2_1.svg} % Adjust the width as needed
+	\caption{The first point to $\ge p=0.99$ was $p_{384}=0.990$ which satisfies the condition.}
+	\label{fig:Figure2}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includesvg[width=0.5\textwidth]{p2_2.svg} % Adjust the width as needed
+	\caption{Crop of Figure~\ref{fig:Figure2}.}
+\end{figure}
+
+\noindent
 \textbf{Psuedocode}\\
 Although the source code differs because loops are removed for speed, the idea is the same.
 
-\pagebreak
 
 \begin{lstlisting}
 xs = []
@@ -230,23 +248,8 @@ button_2_mean = (2 + 100)/2
 return argmin([abs(x_mean - button_1_mean), abs(x_mean - button_2_mean)]) + 1
 \end{lstlisting}
 
-\subsection*{Find $n$ such that Alice is correct $\ge 0.99$}
-I sampled Alice's strategy varying $n$ between $[0, 500]$ and extracted the first n that results in probability atleast $0.99$. I set the $seed=27$ and  ran $400000$ trials for all $n$'s.
 
-\begin{figure}[H]
-    \centering
-    \includesvg[width=0.5\textwidth]{p2_1.svg} % Adjust the width as needed
-    \caption{The first point to $\ge p=0.99$ was $p_{384}=0.990$ which satisfies the condition.}
-    \label{fig:Figure2}
-\end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includesvg[width=0.5\textwidth]{p2_2.svg} % Adjust the width as needed
-    \caption{Crop of Figure~\ref{fig:Figure2}.}
-\end{figure}
-
-\pagebreak
 \raggedbottom
 \section{Practice with Uniform and Geometric Distributions}
 
@@ -255,7 +258,7 @@ First find E[X] and V[X] of the geometric distribution. Since X is a fair dice $
 \vspace{-10pt}
 \begin{align*}
 E[X] &= \frac{1}{1/6} = 6 \\
-V[X] &= \frac{1-p}{(1/6)^2} = 30 \\
+V[X] &= \frac{1-1/6}{(1/6)^2} = 30 \\
 \end{align*}
 
 \vspace{-20pt}
