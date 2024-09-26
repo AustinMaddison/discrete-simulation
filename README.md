@@ -9,7 +9,7 @@
   - L1: [Approximating PI](src%2Fwk2%2Fl3.ipynb)
 
 [//]: # (  - L2: )
-[//]: # (  - HW2: [Handout]&#40;src%2Fhw1%2Fhandout%2FHW1.pdf&#41;, [Source]&#40;src%2Fhw1&#41;, [Answers]&#40;src%2Fhw1%2Ftex%2Fhw1.pdf&#41;)
+[//]: # (  - HW2: [Handout]&#40;src%2Fhw1%2Fhandout%2FHW1.pdf&#41;, [Source Code]&#40;src%2Fhw1&#41;, [Answers]&#40;src%2Fhw1%2Ftex%2Fhw1.pdf&#41;)
 
 ---
 From syllabus...
