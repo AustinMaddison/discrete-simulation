@@ -3,12 +3,12 @@
 - **WK 1**
   - L1: [Toss Coin Experiment](wk1%2Ftoss_coin.mlx)
   - L2: Lots of Defs and Proofs on Probability.
-  - HW1: [Handout](hw1%2Fhandout%2FHW1.pdf), [Source Code](src%2Fhw1), [Answers](hw1%2Ftypeset%2Fhw1_answer.pdf)
+  - HW1: [Handout](hw1%2Fhandout%2FHW1.pdf), [Source Code](src%2Fhw1), [Answers](hw1%2Ftypeset%2Fhw1_answers.pdf)
 
 - **WK 2**
   - L1: [Methods for Approximating PI](wk2%2Fl3.ipynb)
   - L2: Finding underlying distributions, estimators, concentration, true variance, deriving archimedes approximation of PI. 
-  - HW2: [Handout](hw2%2Fhandout%2Fhw2_handout.pdf), [Source Code](w2%2Fsource), [Answers](hw2%2Ftypeset%2Fhw2_answer.pdf)
+  - HW2: [Handout](hw2%2Fhandout%2Fhw2_handout.pdf), [Source Code](w2%2Fsource), [Answers](hw2%2Ftypeset%2Fhw2_answers.pdf)
 ---
 From syllabus...
 ### Course Objective
