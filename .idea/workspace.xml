@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6c8ff98a-a9f7-4119-be82-5bfce1ca1641" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discrete-sim-src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discrete-simulation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/.ipynb_checkpoints/p1-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/my_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/source/my_settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/p1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/source/p1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/p2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/source/p2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/p3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/source/p3.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/1-p1_d_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/1-p1_d_svg-tex.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/2-p1_d_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/2-p1_d_svg-tex.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/2-p1_e_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/2-p1_e_svg-tex.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/2-p2_1_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/2-p2_1_svg-tex.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/3-p2_1_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/3-p2_1_svg-tex.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/3-p2_2_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/3-p2_2_svg-tex.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/4-p2_2_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/4-p2_2_svg-tex.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/4-p3_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/4-p3_svg-tex.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/5-p3_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/5-p3_svg-tex.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/hw1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/hw1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/hw1.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/hw1_answer.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/p1_d.svg" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/p1_d.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/p1_e.svg" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/p1_e.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/p2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/p2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/p2_1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/p2_1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/p2_2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/p2_2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/p3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/p3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/p3_1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/p3_1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/svg-extract/1-p1_d_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/svg-extract/1-p1_d_svg-tex.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/svg-extract/2-p1_e_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/svg-extract/2-p1_e_svg-tex.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/svg-extract/2-p2_1_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/svg-extract/2-p2_1_svg-tex.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/svg-extract/3-p2_1_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/svg-extract/3-p2_1_svg-tex.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/svg-extract/3-p2_2_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/svg-extract/3-p2_2_svg-tex.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/svg-extract/4-p2_2_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/svg-extract/4-p2_2_svg-tex.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/svg-extract/4-p3_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/svg-extract/4-p3_svg-tex.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/svg-extract/5-p3_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/svg-extract/5-p3_svg-tex.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/svg-inkscape/p1_d_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/svg-inkscape/p1_d_svg-tex.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/svg-inkscape/p1_e_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/svg-inkscape/p1_e_svg-tex.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/svg-inkscape/p2_1_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/svg-inkscape/p2_1_svg-tex.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/svg-inkscape/p2_2_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/svg-inkscape/p2_2_svg-tex.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/tex/svg-inkscape/p3_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typset/svg-inkscape/p3_svg-tex.pdf" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2me7peUjkfvEIv90OA4livPonzk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-09665e90c3a7-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.15026.15" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6c8ff98a-a9f7-4119-be82-5bfce1ca1641" name="Changes" comment="" />
+      <created>1727425372243</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727425372243</updated>
+      <workItem from="1727425377541" duration="430000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
