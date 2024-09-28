@@ -5,40 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c8ff98a-a9f7-4119-be82-5bfce1ca1641" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/discrete-simulation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discrete-simulation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw2/source/my_settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw2/source/p1.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/1-p1_d_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/1-p1_d_svg-tex.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/2-p1_d_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/2-p1_d_svg-tex.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/2-p1_e_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/2-p1_e_svg-tex.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/2-p2_1_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/2-p2_1_svg-tex.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/3-p2_1_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/3-p2_1_svg-tex.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/3-p2_2_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/3-p2_2_svg-tex.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/4-p2_2_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/4-p2_2_svg-tex.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/4-p3_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/4-p3_svg-tex.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/5-p3_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/5-p3_svg-tex.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/hw1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/hw1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/hw1_answer.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/hw1_answer.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/p1_d.svg" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/p1_d.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/p1_e.svg" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/p1_e.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/p2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/p2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/p2_1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/p2_1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/p2_2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/p2_2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/p3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/p3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/p3_1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/p3_1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/svg-extract/1-p1_d_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-extract/1-p1_d_svg-tex.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/svg-extract/2-p1_e_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-extract/2-p1_e_svg-tex.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/svg-extract/2-p2_1_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-extract/2-p2_1_svg-tex.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/svg-extract/3-p2_1_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-extract/3-p2_1_svg-tex.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/svg-extract/3-p2_2_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-extract/3-p2_2_svg-tex.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/svg-extract/4-p2_2_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-extract/4-p2_2_svg-tex.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/svg-extract/4-p3_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-extract/4-p3_svg-tex.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/svg-extract/5-p3_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-extract/5-p3_svg-tex.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/svg-inkscape/p1_d_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-inkscape/p1_d_svg-tex.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/svg-inkscape/p1_e_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-inkscape/p1_e_svg-tex.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/svg-inkscape/p2_1_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-inkscape/p2_1_svg-tex.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/svg-inkscape/p2_2_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-inkscape/p2_2_svg-tex.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typset/svg-inkscape/p3_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-inkscape/p3_svg-tex.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wk2/l3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wk2/l3.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,35 +15,57 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2me7peUjkfvEIv90OA4livPonzk" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/dev/discrete-simulation/hw2/source&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\discrete-simulation\hw2\source" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\dev\discrete-simulation\hw1\source" />
     </key>
@@ -94,7 +85,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1727425372243</updated>
-      <workItem from="1727425377541" duration="4333000" />
+      <workItem from="1727425377541" duration="9749000" />
+      <workItem from="1727487201142" duration="923000" />
     </task>
     <servers />
   </component>
