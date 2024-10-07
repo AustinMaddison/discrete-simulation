@@ -24,14 +24,14 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="2.8970539"
-     inkscape:cx="1458.7233"
-     inkscape:cy="233.85827"
-     inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
+     inkscape:zoom="0.72426348"
+     inkscape:cx="1080.4079"
+     inkscape:cy="274.76189"
+     inkscape:window-width="1387"
+     inkscape:window-height="1032"
+     inkscape:window-x="239"
+     inkscape:window-y="298"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1">
     <inkscape:grid
        id="grid1"
@@ -126,6 +126,24 @@
        width="139.61255"
        height="19.038075"
        id="rect22" />
+    <rect
+       x="2118.1079"
+       y="422.25473"
+       width="139.61255"
+       height="19.038074"
+       id="rect21-6" />
+    <rect
+       x="2118.1079"
+       y="422.25473"
+       width="139.61255"
+       height="19.038074"
+       id="rect7" />
+    <rect
+       x="2118.1079"
+       y="422.25473"
+       width="139.61255"
+       height="19.038074"
+       id="rect21-6-7" />
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -137,15 +155,26 @@
        id="path1"
        cx="25.403374"
        cy="103.5829"
-       r="30.000008" />
+       r="30.000008"
+       inkscape:export-filename="p1_1.pdf"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.43274621,0,0,0.43274621,-906.42594,-75.739446)"
+       id="text19-7-2"
+       style="font-weight:500;font-size:8.00001px;line-height:0;font-family:'Helvetica Neue LT Std';-inkscape-font-specification:'Helvetica Neue LT Std Medium';font-variation-settings:normal;text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect21-6-7);fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.808785;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><tspan
+         x="2182.0581"
+         y="423.96591"
+         id="tspan8">$r$</tspan></text>
     <circle
-       style="fill:#000000;stroke:none;stroke-width:0.703861;stroke-linecap:square;stroke-linejoin:bevel;stroke-dasharray:none"
+       style="fill:#000000;stroke:none;stroke-width:0.70386;stroke-linecap:square;stroke-linejoin:bevel;stroke-dasharray:none"
        id="path4"
-       cx="25.403374"
-       cy="103.5829"
-       r="1.0000008" />
+       cx="25.391958"
+       cy="103.78839"
+       r="0.5" />
     <path
-       style="fill:#000000;stroke:#000000;stroke-width:0.35;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:0.7, 0.7;stroke-dashoffset:0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.35;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:0.7, 0.7;stroke-dashoffset:0;opacity:0.5"
        d="m 25.403374,103.74607 30.258323,0.0306"
        id="path5"
        sodipodi:nodetypes="cc" />
@@ -159,13 +188,55 @@
          id="path1-3"
          cx="30.501724"
          cy="128.44516"
-         r="30.000008" />
+         r="30.000008"
+         inkscape:export-filename="p1_2.pdf"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
       <circle
          style="fill:#000000;stroke:none;stroke-width:0.703861;stroke-linecap:square;stroke-linejoin:bevel;stroke-dasharray:none"
          id="path4-4"
          cx="30.501724"
          cy="128.44516"
-         r="1.0000008" />
+         r="0.5" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.35;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:0.7, 0.7;stroke-dashoffset:0;opacity:0.5"
+         d="m 30.484811,98.256828 0.0081,30.224112"
+         id="path8-2-3-9"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="opacity:0.5;fill:none;stroke:#000000;stroke-width:0.35;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:0.7, 0.7;stroke-dashoffset:0"
+         d="m 192.02658,98.76708 0.008,30.22412"
+         id="path8-2-3-9-7"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="p1_3.pdf"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="opacity:0.5;fill:none;stroke:#000000;stroke-width:0.35;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:0.7, 0.7;stroke-dashoffset:0"
+         d="m 192.02658,98.76708 0.008,30.22412"
+         id="path2"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="opacity:0.5;fill:none;stroke:#000000;stroke-width:0.35;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:0.7, 0.7;stroke-dashoffset:0"
+         d="M 56.768439,113.17456 30.492911,128.48094"
+         id="path3"
+         sodipodi:nodetypes="cc" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.43274621,0,0,0.43274621,-920.24642,-65.170027)"
+         id="text19-7"
+         style="font-weight:500;font-size:8.00001px;line-height:0;font-family:'Helvetica Neue LT Std';-inkscape-font-specification:'Helvetica Neue LT Std Medium';font-variation-settings:normal;text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect21-6);fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.808785;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><tspan
+           x="2182.0581"
+           y="423.96591"
+           id="tspan9">$r$</tspan></text>
+      <text
+         xml:space="preserve"
+         transform="matrix(0.43274621,0,0,0.43274621,-901.79808,-59.416337)"
+         id="text7"
+         style="font-weight:500;font-size:8.00001px;line-height:0;font-family:'Helvetica Neue LT Std';-inkscape-font-specification:'Helvetica Neue LT Std Medium';font-variation-settings:normal;text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect7);fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.808785;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><tspan
+           x="2182.0581"
+           y="423.96591"
+           id="tspan10">$r$</tspan></text>
     </g>
     <g
        inkscape:groupmode="layer"
@@ -216,20 +287,23 @@
        id="path1-3-4"
        cx="346.99869"
        cy="103.15892"
-       r="30.000008" />
+       r="30.000008"
+       inkscape:export-filename="path1-3-4.pdf"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <circle
        style="fill:#000000;stroke:none;stroke-width:0.703861;stroke-linecap:square;stroke-linejoin:bevel;stroke-dasharray:none"
        id="path4-4-1"
        cx="346.99869"
        cy="103.15892"
-       r="1.0000008" />
+       r="0.5" />
     <path
-       style="fill:#000000;stroke:#000000;stroke-width:0.35;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:0.7, 0.7;stroke-dashoffset:0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.35;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:0.7, 0.7;stroke-dashoffset:0;opacity:0.5"
        d="m 346.9987,103.32209 -25.87942,14.61016"
        id="path6-5-5"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:#000000;stroke:#000000;stroke-width:0.35;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:0.7, 0.7;stroke-dashoffset:0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.35;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:0.7, 0.7;stroke-dashoffset:0;opacity:0.5"
        d="m 346.9987,103.32209 25.87942,14.61016"
        id="path7-6-3"
        sodipodi:nodetypes="cc" />
@@ -261,7 +335,10 @@
        id="path1-3-4-2"
        cx="505.40338"
        cy="102.41473"
-       r="30.000008" />
+       r="30.000008"
+       inkscape:export-filename="p1_4.pdf"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <circle
        style="fill:#000000;stroke:none;stroke-width:0.703861;stroke-linecap:square;stroke-linejoin:bevel;stroke-dasharray:none"
        id="path4-4-1-3"
@@ -304,7 +381,7 @@
        id="path4-4-1-0"
        cx="505.37381"
        cy="102.50942"
-       r="1.0000008" />
+       r="0.5" />
     <path
        style="fill:#000000;stroke:#000000;stroke-width:0.349999;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:0.700001, 0.700001;stroke-dashoffset:0"
        d="m 505.41088,103.11199 -52.40922,29.5924"
@@ -316,7 +393,7 @@
        id="path7-6-3-8"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:#000000;stroke:#000000;stroke-width:0.349999;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:0.700001, 0.700001;stroke-dashoffset:0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.349999;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:0.700001, 0.700001;stroke-dashoffset:0;opacity:0.5"
        d="m 505.41088,103.11199 v 29.71089"
        id="path8-2-3-4"
        sodipodi:nodetypes="cc" />
@@ -376,7 +453,7 @@
        style="font-weight:500;font-size:8.00001px;line-height:0;font-family:'Helvetica Neue LT Std';-inkscape-font-specification:'Helvetica Neue LT Std Medium';font-variation-settings:normal;text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect15);opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.808785;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><tspan
          x="2161.8341"
          y="423.96591"
-         id="tspan1">$\fract{\pi}{3}$</tspan></text>
+         id="tspan11">$\fract{\pi}{3}$</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.43274621,0,0,0.43274621,-445.56409,-63.923492)"
@@ -384,7 +461,7 @@
        style="font-weight:500;font-size:8.00001px;line-height:0;font-family:'Helvetica Neue LT Std';-inkscape-font-specification:'Helvetica Neue LT Std Medium';font-variation-settings:normal;text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect16);opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.808785;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><tspan
          x="2182.0581"
          y="423.96591"
-         id="tspan2">$r$</tspan></text>
+         id="tspan12">$r$</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.43274621,0,0,0.43274621,-419.02215,-46.108884)"
@@ -392,7 +469,7 @@
        style="font-weight:500;font-size:8.00001px;line-height:0;font-family:'Helvetica Neue LT Std';-inkscape-font-specification:'Helvetica Neue LT Std Medium';font-variation-settings:normal;text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect17);opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.808785;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><tspan
          x="2141.754"
          y="423.96591"
-         id="tspan3">$r \cdot tan(fract{\pi}{3})$</tspan></text>
+         id="tspan13">$r \cdot tan(fract{\pi}{3})$</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.43274621,0,0,0.43274621,-595.46448,-74.326866)"
@@ -400,7 +477,7 @@
        style="font-weight:500;font-size:8.00001px;line-height:0;font-family:'Helvetica Neue LT Std';-inkscape-font-specification:'Helvetica Neue LT Std Medium';font-variation-settings:normal;text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect20);opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.808785;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><tspan
          x="2161.8341"
          y="423.96591"
-         id="tspan4">$\fract{\pi}{3}$</tspan></text>
+         id="tspan14">$\fract{\pi}{3}$</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.43274621,0,0,0.43274621,-582.92448,-72.599691)"
@@ -408,7 +485,7 @@
        style="font-weight:500;font-size:8.00001px;line-height:0;font-family:'Helvetica Neue LT Std';-inkscape-font-specification:'Helvetica Neue LT Std Medium';font-variation-settings:normal;text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect21);opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.808785;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><tspan
          x="2182.0581"
          y="423.96591"
-         id="tspan5">$r$</tspan></text>
+         id="tspan15">$r$</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.43274621,0,0,0.43274621,-586.42959,-61.634715)"
@@ -416,7 +493,7 @@
        style="font-weight:500;font-size:8.00001px;line-height:0;font-family:'Helvetica Neue LT Std';-inkscape-font-specification:'Helvetica Neue LT Std Medium';font-variation-settings:normal;text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect22);opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.808785;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><tspan
          x="2142.27"
          y="423.96591"
-         id="tspan6">$r \cdot sin(fract{\pi}{3})$</tspan></text>
+         id="tspan16">$r \cdot sin(fract{\pi}{3})$</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"

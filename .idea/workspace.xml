@@ -5,10 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c8ff98a-a9f7-4119-be82-5bfce1ca1641" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hw2/source/my_settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw2/source/p1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw2/source/p2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wk3/l4.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wk3/my_settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wk2/l3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wk2/l3.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/typeset/1-p1_d_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/1-p1_d_svg-tex.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/typeset/2-p1_e_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/2-p1_e_svg-tex.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/typeset/3-p2_1_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/3-p2_1_svg-tex.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/typeset/4-p2_2_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/4-p2_2_svg-tex.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/typeset/5-p3_svg-tex.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/5-p3_svg-tex.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/typeset/hw1_answers.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/hw1_answers.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/typeset/hw1_answers.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/hw1_answers.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/typeset/svg-extract/1-p1_d_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-extract/1-p1_d_svg-tex.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/typeset/svg-extract/2-p1_e_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-extract/2-p1_e_svg-tex.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/typeset/svg-extract/3-p2_1_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-extract/3-p2_1_svg-tex.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/typeset/svg-extract/4-p2_2_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-extract/4-p2_2_svg-tex.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1/typeset/svg-extract/5-p3_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-extract/5-p3_svg-tex.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw2/drawings/archimedes.svg" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/drawings/archimedes.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw2/source/p1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/source/p1.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +79,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\dev\discrete-simulation\hw2\source" />
+      <recent name="C:\dev\discrete-simulation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\dev\discrete-simulation\hw1\source" />
@@ -87,6 +102,14 @@
       <updated>1727425372243</updated>
       <workItem from="1727425377541" duration="9749000" />
       <workItem from="1727487201142" duration="923000" />
+      <workItem from="1727510613986" duration="593000" />
+      <workItem from="1727685164349" duration="8537000" />
+      <workItem from="1727936386374" duration="16365000" />
+      <workItem from="1728012648017" duration="3405000" />
+      <workItem from="1728115949275" duration="1251000" />
+      <workItem from="1728187320384" duration="4893000" />
+      <workItem from="1728203545160" duration="1647000" />
+      <workItem from="1728267927595" duration="650000" />
     </task>
     <servers />
   </component>
