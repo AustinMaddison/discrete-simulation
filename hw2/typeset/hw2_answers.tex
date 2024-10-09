@@ -1,4 +1,4 @@
-\documentclass[twocolumn]{article}
+\documentclass{article}
 
 \newcommand{\authorname}{Austin Jetrin Maddison}
 \newcommand{\course}{Discrete Simulation}
@@ -43,6 +43,7 @@
 \usepackage{svg-extract}
 \usepackage{caption}
 \usepackage{float}
+\usepackage{multicol}
 
 
 \usepackage[a4paper, margin=0.8in, columnsep=20pt]{geometry}
@@ -126,28 +127,32 @@
 \date{} 
 
 %
-\twocolumn[{
-	\vspace*{-1cm}
-	\maketitle
-	\vspace*{-0.5cm}
-}]
+%\twocolumn[{
+%	\vspace*{-1cm}
+%	\maketitle
+%	\vspace*{-0.5cm}
+%}]
 
-
-\raggedbottom
+\maketitle
+%\raggedbottom
 \section{Archimedes Method of N-Gon}
 
-\setlength\parindent{24pt}
-a)
-\setlength\parindent{24pt}
+a) 
+
+
 
 \textbf{Calculate $\mathbf{p_3}$}
+
+\begin{multicols}{2}
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{../drawings/p1_1}
+	\includegraphics[width=1\linewidth]{../drawings/p1_1}
 %	\caption{}
 %	\label{fig:path1}
 \end{figure}
 
+\columnbreak
 
 \begin{align*}
 	p_{3}&=2d+2d+2d\\ 
@@ -156,18 +161,20 @@ a)
 	&=3\sqrt{3}
 \end{align*}
 
-\pagebreak
+\end{multicols}
 
 \textbf{Calculate $\mathbf{P_3}$}	
+
+\begin{multicols}{2}
 	
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{../drawings/p1_2}
-%	\caption{}
-%	\label{fig:path2}
+	\includegraphics[width=1\linewidth]{../drawings/p1_2}
+	%	\caption{}
+	%	\label{fig:path2}
 \end{figure}
 
-
+\columnbreak
 
 \begin{align*}
 	P_{3}&=2d+2d+2d\\ 
@@ -175,6 +182,41 @@ a)
 	&=6\cdot\sqrt{3}\\ 
 	&=6\sqrt{3}
 \end{align*}
+	
+\end{multicols}
+
+\noindent
+b)
+\begin{multicols}{2}
+\begin{lstlisting}
+P_6 , p_6  pi approx = 3.14614428  
+pi                   = 3.14159265  
+# matching digits 	 = 3
+
+P_12, p_12 pi approx = 3.14187328  
+pi                   = 3.14159265  
+# matching digits 	 = 4
+
+P_24, p_24 pi approx = 3.14161018  
+pi                   = 3.14159265  
+# matching digits 	 = 4
+
+P_48, p_48 pi approx = 3.14159375  
+pi                   = 3.14159265  
+# matching digits 	 = 6
+
+P_96, p_96 pi approx = 3.14159272  
+pi                   = 3.14159265  
+# matching digits 	 = 7
+
+P_192, p_192 pi approx = 3.14159266  
+pi                     = 3.14159265  
+# matching digits 	   = 9
+
+\end{lstlisting}
+
+\end{multicols}
+
 
 
 
@@ -183,8 +225,7 @@ a)
 
 \section{Approximate $\mathbf{\sqrt{2}}$}
 
-a) \\
-Summed all the n-terms of the taylor expansion of $\sqrt{2}$.
+a)  Summed all the n-terms of the taylor expansion of $\sqrt{2}$.
 \\
 \begin{lstlisting}
 def f(n=150):
@@ -210,8 +251,9 @@ $f()=1.4142909169379279$
 
 
 \noindent
-b) Approximate $\sqrt{2}$ by uniformly sampling random numbers and checking whether their squares are less than 2.
+b) Approximate $\sqrt{2}$ by uniformly sampling uniform random numbers $x$ and counting whether $x^2$.
 \\
+\begin{multicols}{2}
 \begin{lstlisting}
 def f(n = 1000000, x=2):
 	xs = np.random.ranf(n) * x
@@ -227,6 +269,16 @@ def f(n = 1000000, x=2):
 \noindent
 $f()=1.4142909169379279$ \\
 $CI=[1.4135070094100637, 1.4170729905899362]$
+
+\columnbreak
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{../drawings/p2_2}
+	%	\caption{}
+	%	\label{fig:path2}
+\end{figure}
+\end{multicols}
+
 
 \pagebreak
 
@@ -257,6 +309,59 @@ def f(N, max_doors=3, max_cars=1, switch=True):
 \vspace{10pt}
 \noindent
 $f(\texttt{500000, max\_doors=5, max\_cars=2})\\=0.5333$
+\\
+\\
+\noindent
+b)
+I am going to count events like Ajarn demoed in class using a table of events as it was more intuitive to me:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{../drawings/p3_1}
+	%	\caption{}
+	%	\label{fig:path2}
+\end{figure}
+
+\vspace{-20pt}
+\begin{align*}
+	P\{\text{Chose C first}\} = \frac{20}{50} = \frac{2}{5} \text{\hspace{10pt}}
+	P\{\text{Chose G first}\} = \frac{30}{50} = \frac{3}{5} 
+\end{align*}
+
+\vspace{15pt}
+\begin{multicols}{2}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\linewidth]{../drawings/p3_2}
+	%	\caption{}
+	%	\label{fig:path2}
+\end{figure}
+\vspace{-25pt}
+\begin{align*}
+P\{\text{Winning | Chose C First}\} = \frac{3}{9} = \frac{1}{3}\\
+\end{align*}
+
+
+
+\columnbreak
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\linewidth]{../drawings/p3_3}
+	%	\caption{}
+	%	\label{fig:path2}
+\end{figure}
+\vspace{-25pt}
+\begin{align*}
+P\{\text{Winning | Chose G First}\} = \frac{6}{9} = \frac{2}{3} \\
+\end{align*}
+
+\end{multicols}
+
+\begin{align*}
+	P\{\text{Winning}\} = \frac{2}{5}  \cdot \frac{1}{3} + \frac{3}{5}  \cdot \frac{2}{3} = 0.5333...\\
+\end{align*}
+
+
 
 \section*{Source Code}
 \href{https://github.com/AustinMaddison/discrete-simulation/tree/main/hw2/source}{https://github.com/AustinMaddison/discrete-simulation/tree/main/hw2/source}
