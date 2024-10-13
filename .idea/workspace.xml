@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c8ff98a-a9f7-4119-be82-5bfce1ca1641" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hw2/source/p5.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw2/source/p6.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wk5/l6.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wk5/my_settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/source/p2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/source/p2.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/submit/hw2_answers.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/submit/hw2_austin.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/submit/my_settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/submit/p1.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/submit/p2.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/submit/p3.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw2/hw2_austin.zip" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/hw2_austin.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw2/source/my_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/source/my_settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw2/source/p6.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/source/p6.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hw2/typeset/hw2_answers.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/typeset/hw2_answers.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hw2/typeset/hw2_answers.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/typeset/hw2_answers.tex" afterDir="false" />
     </list>
@@ -56,23 +53,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;Tab-separated (TSV)_id&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/dev/discrete-simulation/hw2/source&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "database.data.extractors.current.export.id": "Tab-separated (TSV)_id",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/dev/discrete-simulation/wk5/img.png",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\discrete-simulation\wk5" />
       <recent name="C:\dev\discrete-simulation\hw2\source" />
       <recent name="C:\dev\discrete-simulation\wk4" />
       <recent name="C:\dev\discrete-simulation" />
@@ -112,7 +110,9 @@
       <workItem from="1728446407492" duration="7102000" />
       <workItem from="1728513106603" duration="5405000" />
       <workItem from="1728518804497" duration="865000" />
-      <workItem from="1728519726407" duration="718000" />
+      <workItem from="1728519726407" duration="848000" />
+      <workItem from="1728522209014" duration="2758000" />
+      <workItem from="1728551385445" duration="7029000" />
     </task>
     <servers />
   </component>
