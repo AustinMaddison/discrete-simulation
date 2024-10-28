@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c8ff98a-a9f7-4119-be82-5bfce1ca1641" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/wk5/l6.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wk5/my_settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw3/source/my_settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw3/source/p1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw3/source/p2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw3/source/p4.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw3/source/p5.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw3/typeset/hw3_answers.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw3/zip_submission.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wk6/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wk6/l7.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wk6/my_settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/hw2_austin.zip" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/hw2_austin.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/source/my_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/source/my_settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/source/p6.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/source/p6.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/typeset/hw2_answers.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/typeset/hw2_answers.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/typeset/hw2_answers.tex" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/typeset/hw2_answers.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wk5/l6.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wk5/l6.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +42,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -57,23 +73,25 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "database.data.extractors.current.export.id": "Tab-separated (TSV)_id",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/dev/discrete-simulation/wk5/img.png",
+    "last_opened_file_path": "C:/dev/discrete-simulation/hw3/source",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\discrete-simulation\hw3\source" />
+      <recent name="C:\dev\discrete-simulation" />
       <recent name="C:\dev\discrete-simulation\wk5" />
       <recent name="C:\dev\discrete-simulation\hw2\source" />
       <recent name="C:\dev\discrete-simulation\wk4" />
-      <recent name="C:\dev\discrete-simulation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\dev\discrete-simulation" />
@@ -113,6 +131,15 @@
       <workItem from="1728519726407" duration="848000" />
       <workItem from="1728522209014" duration="2758000" />
       <workItem from="1728551385445" duration="7029000" />
+      <workItem from="1728954338316" duration="653000" />
+      <workItem from="1729138539756" duration="689000" />
+      <workItem from="1729405629559" duration="668000" />
+      <workItem from="1729411564189" duration="45000" />
+      <workItem from="1729502077081" duration="10138000" />
+      <workItem from="1729669389659" duration="4632000" />
+      <workItem from="1729699528598" duration="3107000" />
+      <workItem from="1729939279648" duration="901000" />
+      <workItem from="1730017416971" duration="10586000" />
     </task>
     <servers />
   </component>

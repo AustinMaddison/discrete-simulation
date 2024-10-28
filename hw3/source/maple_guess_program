@@ -1,0 +1,326 @@
+# restart; read `\G:/My Drive/Teaching/00 Simulation
+# /Week4.txt`;
+
+with(Statistics):
+with(plots):
+
+################################################
+# From week 1
+
+# Input: p probability of success
+# Output: the number of flips until first success
+MyGeometric := proc(p)
+local roll, count;
+
+roll := rand(1..100000);
+count := 1;
+
+while roll()/100000 > p do
+	count:= count+1;
+od:
+
+return(count);
+end:
+
+# Take list A
+# Output: Sample mean
+SampleMean := proc(A) option remember;
+local i,n;
+
+n:= nops(A);
+evalf(add(A[i],i=1..n)/n);
+end:
+
+SampleVariance := proc(A) option remember;
+local i,n,T;
+
+n := nops(A);
+T := add( (A[i]-SampleMean(A))^2,i=1..n)/(n-1);
+
+return(evalf(T));
+end:
+
+# Test the percentage of confidence interval
+# that contains the population mean mu
+# Input: N number of time to create the CI
+# Ouput: percentage that CI contains mu
+TestCI := proc(N) 
+local i,n,xb,s2,count,A;
+
+# sample size n
+n := 200;
+count :=0;
+
+for i from 1 to N do
+	A:= [seq(MyGeometric(0.25),i=1..n)]:
+	xb:=SampleMean(A);
+	s2:=SampleVariance(A);
+	if xb-1.96*sqrt(s2/n) <= 4 and
+	4 <= xb+1.96*sqrt(s2/n) then
+		count := count+1;
+	fi:	
+od:
+
+return(evalf(count/N));
+
+end:
+
+################################################
+# Week 2, September 23
+
+# Input: positive integer n
+# Output: 1/2*the perimeter of 
+# an 2*2^n-gon that inscribe/circumscribe 
+# the circle of radius 1.
+# Try:
+# Archimedes(5); 
+Archimedes := proc(N) option remember;
+local subp,subP,newP,newp;
+
+if N=1 then
+	return([2*sqrt(2),4]);
+end:
+
+subp := Archimedes(N-1)[1];
+subP := Archimedes(N-1)[2];
+
+newP := evalf(2*subp*subP/(subp+subP));
+newp := evalf(sqrt(subp*newP));
+	
+return([newp,newP]);
+end: 
+
+# Simulation for Pi
+# Input: Nothing
+# Output: 1 if x^2+y^2<1 and 0 otherwise
+# Try:
+# SimPi();
+SimPi := proc()
+local roll,x,y;
+
+roll := rand(-100000..100000);
+x := roll()/100000;
+y := roll()/100000;
+
+
+if x^2+y^2 < 1 then
+	return(1);
+else
+	return(0);
+fi:	
+
+end:
+
+# Monty Hall's problem
+# Input: door's number (1 or 2 or 3)
+# Ouput: 1 if you win the prize 
+# with switching door strategy
+# 0 if you don't win the prize
+# Try:
+# Monty(2);
+Monty := proc(door)
+local roll,car,S,host,last,switch;
+
+roll := rand(1..3);
+car := roll();
+
+# host open the door that contains goat
+S := {1,2,3} minus {car,door};
+host := S[1];
+# Note: I should also let the host randomly
+# pick the door in the set S.
+
+# The contestant switches to the new door.
+last := {1,2,3} minus {door,host};
+switch := last[1];
+
+if switch = car then
+	return(1);
+else
+	return(0);
+fi:	
+
+end:
+
+
+################################################
+# Week 3, Monday September 30
+# Benford's Law
+
+# Output: the leading digit of n
+# Try: LeadDigit(734);
+LeadDigit := proc(n) option remember;
+floor(n/10^floor(log[10](n)));
+end:
+
+
+# Input: the list of leading digits
+# Output: the density of leading digits 1 to 9
+Density := proc(A) option remember;
+local a,S;
+
+S := [0$9];
+# S[1]= number of leading digits=1,
+# S[2]= number of leading digits=2, ...
+for a in A do
+	S[a] := S[a]+1;
+od:
+
+evalf(S/nops(A));	
+end:
+
+# Fibonacci number
+Fibo := proc(n) option remember;
+if n=0 then
+	return(0);
+elif n=1 then
+	return(1);
+fi:
+
+Fibo(n-1)+Fibo(n-2);	
+end:
+
+# Input: N = number 1 to N
+# k = number of multiplication
+# Try:
+# MulTable(6,4);
+MulTable:= proc(N,k) option remember;
+local a;
+
+if k=0 then
+	return([1]);
+fi:
+
+[seq(seq( a*i,a in MulTable(N,k-1)),i=1..N)];	
+end:
+
+# Another example
+# Breaking the rock
+# Input: s=weight of the rock, 
+# k= the number of levels we break the rock.
+# Try: Break(1000,2);
+Break := proc(s,k) 
+local roll,a,u,T;
+
+if k=0 then
+	return([s]);
+fi:	
+
+roll := rand(1..100000);
+T := [];
+
+for a in Break(s,k-1) do
+	u := (roll()-1/2)/100000;
+	T := [op(T),u*a,(1-u)*a];
+od:
+
+evalf(T);
+end:
+
+# Another example
+# Breaking the rock
+# Input: s=weight of the Cake, 
+# k= the number of levels we cut the cake.
+# Try: Cut(1000,2);
+Cut := proc(s,k) 
+local roll,a,u,T;
+
+if k=0 then
+	return([s]);
+fi:	
+
+roll := rand(1..100000);
+u := (roll()-1/2)/100000;
+T := [];
+
+# Use the same ramdom variable u
+for a in Cut(s,k-1) do
+	T := [op(T),u*a,(1-u)*a];
+od:
+
+evalf(T);
+end:
+
+
+################################################
+# Week 4, Thursday October 10
+# C-finite sequences
+#
+# Functions:
+# CFinite, GuessPol, GuessC,
+
+# Input: index n, list of consants C and 
+# list of starting values S
+# Output: a_n
+# Try:
+# (Fibonacci)
+# seq(CFinite(n,[1,1],[0,1]),n=0..20);
+CFinite := proc(n,C,S) option remember;
+local d;
+
+if nops(C) <> nops(S) then
+	ERROR("BadInput");
+fi:
+
+# order of C-finite seq
+d := nops(C);
+
+if n< d then
+	return(S[n+1]);
+fi:
+
+add(C[i]*CFinite(n-i,C,S),i=1..d);
+end:
+
+# Input: List of elements in the seq. A, symbolic n
+# Output: polymial in n that describe A
+# Try:
+# A:=[seq(sum(i,i=1..n),n=0..200)];
+# GuessPol(A,n);
+GuessPol  := proc(A,x) option remember;
+local i,n,c,deg,sol,eq,var;
+
+deg := 0;
+sol := op({});
+
+while sol = op({}) do
+	deg := deg+1;
+	eq := {seq(add( c[i]*n^i,i=0..deg)
+	=A[n+1],n=0..nops(A)-1)};
+	var := {seq(c[i],i=0..deg)};
+	sol := solve(eq,var);
+od:	
+
+if deg > nops(A)-3 then
+	ERROR("NoSolution");
+fi:	
+
+sort(factor(subs(sol,add( c[i]*x^i,i=0..deg))));
+
+end:
+
+# Input: list of sequence A and symbolic N
+# Output: C-finite: Characterictic polynomial in N 
+# Try:
+# A:= [seq(CFinite(n,[1,1],[0,1]),n=0..20)];
+# GuessC(A,N);
+GuessC := proc(A,N) option remember;
+local j,C,n,ord,sol,eq,var;
+
+ord := 0;
+sol := op({});
+
+while sol = op({}) do
+	ord := ord+1;
+	eq := {seq(  A[n]+add(C[j]*A[n-j],j=1..ord)=0, n=ord+1..nops(A))};
+	var := {seq(C[j],j=1..ord)};	
+	sol := solve(eq,var);
+od:
+
+if ord > nops(A)/2-4 then
+	ERROR("NoSolution");
+fi:
+
+# return characteristic polynomial
+factor(subs(sol,N^ord+add(C[j]*N^(ord-j),j=1..ord)));	
+end:
