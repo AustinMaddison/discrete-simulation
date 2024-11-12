@@ -1,0 +1,5 @@
+Q,Method,Lambda (λ),k,Interval,Result,Difference
+a,Poisson Simulation,2,2,"[0, 2)",0.14834,
+,Poisson Formula,2,2,"[0, 2)",0.14652511110987343,0.0018148888901265703
+b,Poisson Simulation,2,2,"[2, 4)",0.14606,
+,Poisson Formula,2,2,"[2, 4)",0.14652511110987343,0.00046511110987343396
