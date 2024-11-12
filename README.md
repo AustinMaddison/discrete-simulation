@@ -8,7 +8,7 @@
 - **WK 2**
   - L1: [Methods for Approximating PI](wk2%2Fl3.ipynb)
   - L2: Finding underlying distributions, estimators, concentration, true variance, deriving archimedes approximation of PI. 
-  - HW2: [Handout](hw2%2Fhandout%2Fhw2_handout.pdf), [Source Code](w2%2Fsource), [Answers](hw2%2Ftypeset%2Fhw2_answers.pdf)
+  - HW2: [Handout](hw2%2Fhandout%2Fhw2_handout.pdf), [Source Code](hw2%2Fsource), [Answers](hw2%2Ftypeset%2Fhw2_answers.pdf)
 
 [//]: # (- **WK 3**)
 
@@ -16,7 +16,7 @@
 
 [//]: # (  - L2: Finding underlying distributions, estimators, concentration, true variance, deriving archimedes approximation of PI.)
 
-[//]: # (  - HW3: [Handout]&#40;hw2%2Fhandout%2Fhw2_handout.pdf&#41;, [Source Code]&#40;w2%2Fsource&#41;, [Answers]&#40;hw2%2Ftypeset%2Fhw2_answers.pdf&#41;)
+HW3: [Handout](hw3%2Fhandout%2Fhw3_handout.pdf), [Source Code](hw3%2Fsource), [Answers](hw3%2Ftypeset%2Fhw3_answers.pdf)
 
 [//]: # ()
 [//]: # (- **WK 4**)
