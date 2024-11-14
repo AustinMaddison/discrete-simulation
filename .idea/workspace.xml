@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c8ff98a-a9f7-4119-be82-5bfce1ca1641" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hw4/data/stars.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw4/source/maple_guess_program" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw4/source/my_settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw4/source/p1.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw4/source/p2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw4/source/p6.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw4/typeset/hw3_answers.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw4/zip_submission.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q2/source/my_settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q2/source/p1.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typeset/hw1_answers.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/hw1_answers.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typeset/svg-extract/1-p1_d_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-extract/1-p1_d_svg-tex.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typeset/svg-extract/2-p1_e_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-extract/2-p1_e_svg-tex.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typeset/svg-extract/3-p2_1_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-extract/3-p2_1_svg-tex.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typeset/svg-extract/4-p2_2_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-extract/4-p2_2_svg-tex.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw1/typeset/svg-extract/5-p3_svg-tex.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/hw1/typeset/svg-extract/5-p3_svg-tex.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/source/p6.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/source/p6.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw5/handout/HW4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw5/source/p1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/hw5/source/p1.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +68,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/dev/discrete-simulation/hw4/source&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/dev/discrete-simulation/q2&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -91,11 +80,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\discrete-simulation\q2" />
       <recent name="C:\dev\discrete-simulation\hw4\source" />
       <recent name="C:\dev\discrete-simulation" />
       <recent name="C:\dev\discrete-simulation\hw3\source" />
       <recent name="C:\dev\discrete-simulation\wk5" />
-      <recent name="C:\dev\discrete-simulation\hw2\source" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\dev\discrete-simulation" />
@@ -151,6 +140,8 @@
       <workItem from="1731113713271" duration="2412000" />
       <workItem from="1731152641635" duration="27594000" />
       <workItem from="1731405953607" duration="1080000" />
+      <workItem from="1731464805329" duration="8411000" />
+      <workItem from="1731540308141" duration="3043000" />
     </task>
     <servers />
   </component>
