@@ -6,6 +6,7 @@ from matplotlib import cm
 from prettytable import PrettyTable
 
 
+
 import timeit
 
 plt.rcParams['text.usetex'] = True
