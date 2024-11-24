@@ -13,7 +13,7 @@ pdf_file="typeset/${cwd_name}_answers.pdf"
 zip_file="${cwd_name}_austin.zip"
 
 # Create the zip file including all files from the source directory and the PDF
-zip -r "$zip_file" "$source_directory"/* "$pdf_file"
+zip -r "$zip_file" "$source_directory"/* 
 
 # Output the result
 if [ $? -eq 0 ]; then
